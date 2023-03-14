@@ -21,17 +21,35 @@ const Header = () => {
           <NavLink href="/kids">Kids</NavLink>
           <NavLink href="/collections">Collections</NavLink>
         </Nav>
+        <div></div>
       </MainHeader>
     </header>
   );
 };
 
 const MainHeader = styled.div`
-  padding: 0 32px;
+  padding: 0 40px;
   border-bottom: 1px solid ${COLORS.gray[300]};
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  > :nth-child(1) {
+    flex: 1;
+  }
+  > :nth-child(3) {
+    flex: 1;
+  }
+  > * {
+    padding: 16px 0;
+  }
 `;
 
-const Nav = styled.nav``;
+const Nav = styled.nav`
+  width: 65%;
+  flex: 3;
+  display: flex;
+  justify-content: space-between;
+`;
 
 const NavLink = styled.a`
   font-size: 1.125rem;
