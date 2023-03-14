@@ -23,12 +23,21 @@ const SuperHeader = () => {
 };
 
 const Wrapper = styled.div`
+  > * {
+    margin: 0 16px;
+  }
   font-size: 0.875rem;
+  padding: 8px;
   color: ${COLORS.gray[300]};
   background-color: ${COLORS.gray[900]};
+  display: flex;
+  align-items: center;
+  padding-right: 16px;
 `;
 
 const MarketingMessage = styled.span`
+  margin-left: 32px;
+  flex-grow: 1;
   color: ${COLORS.white};
 `;
 
